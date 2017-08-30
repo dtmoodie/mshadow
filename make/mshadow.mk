@@ -133,4 +133,4 @@ endif
 # MSHADOW_USE_PASCAL=1 used to enable true-fp16 gemms.  Now, mshadow
 # only uses pseudo-fp16 gemms, so this flag will be removed after
 # dependent projects no longer reference it.
-MSHADOW_CFLAGS += -DMSHADOW_USE_PASCAL=0
+MSHADOW_CFLAGS += -DMSHADOW_USE_PASCAL=1
