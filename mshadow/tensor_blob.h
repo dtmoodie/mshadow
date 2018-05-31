@@ -498,12 +498,6 @@ inline std::istream &operator>>(std::istream &is, TShape &shape) {
       {__VA_ARGS__}                                 \
     }                                               \
     break;                                          \
-  case mshadow::kFloat16:                           \
-    {                                               \
-      typedef mshadow::half::half_t DType;          \
-      {__VA_ARGS__}                                 \
-    }                                               \
-    break;                                          \
   case mshadow::kUint8:                             \
     LOG(FATAL) << "This operation only support "    \
                   "floating point types not uint8"; \

@@ -8,7 +8,7 @@
 #  Add MSHADOW_NVCCFLAGS to the nvcc compile flags
 #----------------------------------------------------------------------------------------
 
-MSHADOW_CFLAGS = -msse3 -funroll-loops -Wno-unused-parameter -Wno-unknown-pragmas
+MSHADOW_CFLAGS = -funroll-loops -Wno-unused-parameter -Wno-unknown-pragmas
 MSHADOW_LDFLAGS = -lm
 MSHADOW_NVCCFLAGS =
 MKLROOT =

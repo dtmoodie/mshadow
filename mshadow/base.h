@@ -272,7 +272,7 @@ struct DataType<double> {
 template<>
 struct DataType<half::half_t> {
   static const int kFlag = kFloat16;
-#if (MSHADOW_USE_CUDA && MSHADOW_USE_CUDNN == 1)
+#if (MSHADOW_USE_CUDA && MSHADOW_USE_CUDNN == 1 && CUDNN_VERSION > 2000)
   static const cudnnDataType_t kCudnnFlag = CUDNN_DATA_HALF;
   typedef float ScaleType;
 #endif
